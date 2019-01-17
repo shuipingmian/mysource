@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shuipingmianproject/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="209">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
                 <element signature="e#459#465#1" expanded="true" />
@@ -50,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shuipingmianproject/angular.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
@@ -67,13 +67,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shuipingmianproject/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/shuipingmianproject/src/index.html" />
         <option value="$PROJECT_DIR$/shuipingmianproject/angular.json" />
+        <option value="$PROJECT_DIR$/shuipingmianproject/src/app/app.component.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1386" />
@@ -201,16 +201,15 @@
       <workItem from="1547608709291" duration="5454000" />
       <workItem from="1547631405697" duration="2226000" />
       <workItem from="1547691480136" duration="2221000" />
-      <workItem from="1547710230210" duration="6951000" />
+      <workItem from="1547710230210" duration="7389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17241000" />
+    <option name="totallyTimeSpent" value="17679000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2514881" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -324,22 +323,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shuipingmianproject/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="32" column="63" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shuipingmianproject/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="209">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <element signature="e#459#465#1" expanded="true" />
             <element signature="e#552#558#1" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuipingmianproject/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="32" column="63" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="63" />
         </state>
       </provider>
     </entry>
