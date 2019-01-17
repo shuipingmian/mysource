@@ -6,3 +6,7 @@
 //移动端设置网页
 
 运用技术  angular   ng-zorro  bootstrap JQ  基础 HTML CSS  JavaScript
+
+
+bootstarp无法引用最新版本  使用下面版本
+npm install  bootstrap@3.3.7  --save
