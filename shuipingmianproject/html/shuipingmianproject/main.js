@@ -63,7 +63,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9hcHAuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -74,7 +74,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- NG-ZORRO -->\r\n<a href=\"https://github.com/NG-ZORRO/ng-zorro-antd\" target=\"_blank\" style=\"display: flex;align-items: center;justify-content: center;height: 100%;width: 100%;\">\r\n  <img height=\"300\" src=\"https://img.alicdn.com/tfs/TB1NvvIwTtYBeNjy1XdXXXXyVXa-89-131.svg\">\r\n\r\n  <button class=\"btn btn-default\" type=\"submit\">这是一个按钮</button>\r\n\r\n</a>\r\n\r\n<nav aria-label=\"...\">\r\n  <ul class=\"pager\">\r\n    <li class=\"previous disabled\"><a href=\"#\"><span aria-hidden=\"true\">&larr;</span> Older</a></li>\r\n    <li class=\"next\"><a href=\"#\">Newer <span aria-hidden=\"true\">&rarr;</span></a></li>\r\n  </ul>\r\n</nav>\r\n\r\n<button class=\"btn btn-default\" type=\"submit\">这是一个按钮</button>\r\n<span class=\"label label-success\">Success</span>\r\n\r\n"
+module.exports = "<!-- NG-ZORRO -->\r\n\r\n<app-bar></app-bar>\r\n<nav aria-label=\"...\">\r\n  <ul class=\"pager\">\r\n    <li class=\"previous disabled\"><a href=\"#\"><span aria-hidden=\"true\">&larr;</span> Older</a></li>\r\n    <li class=\"next\"><a href=\"#\">Newer <span aria-hidden=\"true\">&rarr;</span></a></li>\r\n  </ul>\r\n</nav>\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -132,6 +132,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _angular_common_locales_en__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/locales/en */ "./node_modules/@angular/common/locales/en.js");
 /* harmony import */ var _angular_common_locales_en__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_angular_common_locales_en__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _bar_bar_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./bar/bar.component */ "./src/app/bar/bar.component.ts");
+/* harmony import */ var _routes_heads_heads_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./routes/heads/heads.component */ "./src/app/routes/heads/heads.component.ts");
+
+
 
 
 
@@ -150,7 +154,9 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+                _bar_bar_component__WEBPACK_IMPORTED_MODULE_11__["BarComponent"],
+                _routes_heads_heads_component__WEBPACK_IMPORTED_MODULE_12__["HeadsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -165,6 +171,118 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/bar/bar.component.css":
+/*!***************************************!*\
+  !*** ./src/app/bar/bar.component.css ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".navfont{\r\n    font-size: 16px;\r\n    color:#000000;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2Jhci9iYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtJQUNoQixjQUFjO0NBQ2pCIiwiZmlsZSI6Ii4uL2Jhci9iYXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5uYXZmb250e1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgY29sb3I6IzAwMDAwMDtcclxufVxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/bar/bar.component.html":
+/*!****************************************!*\
+  !*** ./src/app/bar/bar.component.html ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n\n<nav class=\"navbar navbar-inverse navbar-fixed-top\">\n\n   <div class=\"container\">\n\n     <div class=\"navbar-header\">\n       <a class=\"navbar-brand\" href=\"#\">欢迎</a>\n     </div>\n     <div>\n       <ul class=\"nav navbar-nav\">\n         <li> <a class=\"navfont\"  href=\"#\">首页</a></li>\n         <li> <a href=\"#\">我的个人网站</a> </li>\n         <li> <a href=\"#\">简历经历</a> </li>\n       </ul>\n     </div>\n   </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "./src/app/bar/bar.component.ts":
+/*!**************************************!*\
+  !*** ./src/app/bar/bar.component.ts ***!
+  \**************************************/
+/*! exports provided: BarComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BarComponent", function() { return BarComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var BarComponent = /** @class */ (function () {
+    function BarComponent() {
+    }
+    BarComponent.prototype.ngOnInit = function () {
+    };
+    BarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-bar',
+            template: __webpack_require__(/*! ./bar.component.html */ "./src/app/bar/bar.component.html"),
+            styles: [__webpack_require__(/*! ./bar.component.css */ "./src/app/bar/bar.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], BarComponent);
+    return BarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/routes/heads/heads.component.css":
+/*!**************************************************!*\
+  !*** ./src/app/routes/heads/heads.component.css ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJoZWFkcy9oZWFkcy5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/routes/heads/heads.component.html":
+/*!***************************************************!*\
+  !*** ./src/app/routes/heads/heads.component.html ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  heads works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/routes/heads/heads.component.ts":
+/*!*************************************************!*\
+  !*** ./src/app/routes/heads/heads.component.ts ***!
+  \*************************************************/
+/*! exports provided: HeadsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeadsComponent", function() { return HeadsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var HeadsComponent = /** @class */ (function () {
+    function HeadsComponent() {
+    }
+    HeadsComponent.prototype.ngOnInit = function () {
+    };
+    HeadsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-heads',
+            template: __webpack_require__(/*! ./heads.component.html */ "./src/app/routes/heads/heads.component.html"),
+            styles: [__webpack_require__(/*! ./heads.component.css */ "./src/app/routes/heads/heads.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], HeadsComponent);
+    return HeadsComponent;
 }());
 
 
