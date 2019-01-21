@@ -11,6 +11,7 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { BarComponent } from './bar/bar.component';
 import { HeadsComponent } from './routes/heads/heads.component';
+import { LeftnavComponent } from './routes/leftnav/leftnav.component';
 
 registerLocaleData(en);
 
@@ -18,7 +19,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     BarComponent,
-    HeadsComponent
+    HeadsComponent,
+    LeftnavComponent
   ],
   imports: [
     BrowserModule,

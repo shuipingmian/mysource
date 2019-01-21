@@ -1,13 +1,13 @@
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<!--<nav class="navbar navbar-inverse navbar-fixed-top">
 
    <div class="container">
 
      <div class="navbar-header">
        <a class="navbar-brand" href="#">欢迎</a>
      </div>
-     <div>
+     <div >
        <ul class="nav navbar-nav">
          <li> <a class="navfont"  href="#">首页</a></li>
          <li> <a href="#">我的个人网站</a> </li>
@@ -15,4 +15,17 @@
        </ul>
      </div>
    </div>
-</nav>
+</nav>-->
+<nz-layout class="layout">
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <nz-header style="line-height: 64px; background-color: cyan">
+        <div class="logo" style=" background-color: cyan"></div>
+        <ul nz-menu  [nzMode]="'horizontal'" style="line-height: 63px;  background-color: cyan;color:darkblue; font-family: 微软雅黑 ;font-size: 16px" >
+            <li nz-menu-item>首页</li>
+            <li nz-menu-item>我的个人网站</li>
+            <li nz-menu-item>简历</li>
+            <li nz-menu-item>经历</li>
+        </ul>
+    </nz-header>
+    </nav>
+</nz-layout>
