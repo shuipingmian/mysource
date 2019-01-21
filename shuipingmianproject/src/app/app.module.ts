@@ -12,6 +12,8 @@ import en from '@angular/common/locales/en';
 import { BarComponent } from './bar/bar.component';
 import { HeadsComponent } from './routes/heads/heads.component';
 import { LeftnavComponent } from './routes/leftnav/leftnav.component';
+import { ContentComponent } from './routes/content/content.component';
+import { FooterComponent } from './routes/footer/footer.component';
 
 registerLocaleData(en);
 
@@ -20,7 +22,9 @@ registerLocaleData(en);
     AppComponent,
     BarComponent,
     HeadsComponent,
-    LeftnavComponent
+    LeftnavComponent,
+    ContentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
